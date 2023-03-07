@@ -9,7 +9,6 @@ jobs:
   post:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Pushes to public repository
         id: push_directory
         uses: git@github.com:dinesh-adobe/cloudgita.git@SHA256:rNU//MrUg0GNZmrpGxJvktDUdLhkRRIsmLPaGdYQa9k
