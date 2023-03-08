@@ -11,5 +11,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Push to Remote
         run: |
+          git config --global user.email "dineshk@adobe.com>"
+          git config --global user.name "dinesh-adobe"
           git remote add cloud https://github.com/dinesh-adobe/cloudgita.git 
-          git push cloud main
+          git push --force https://${{ secrets.PAT }}@github.com/dinesh-adobe/cloudgita.git main
